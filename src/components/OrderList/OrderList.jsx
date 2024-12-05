@@ -6,7 +6,7 @@ const OrderList = () => {
 
     const fetchInfo = async () => {
         try {
-            const response = await fetch('http://localhost:7000/allorders');
+            const response = await fetch('https://fyp-backend-order.onrender.com/allorders');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }

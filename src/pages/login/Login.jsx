@@ -12,7 +12,7 @@ const Login = ({ onLogin }) => {
         setError('');
 
         try {
-            const response = await fetch('http://localhost:4000/adminlogin', {
+            const response = await fetch('https://fyp-backend-user.onrender.com/adminlogin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
